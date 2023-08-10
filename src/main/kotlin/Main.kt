@@ -2,7 +2,7 @@ import model.*
 
 fun main() {
     // Solicitar al usuario que ingrese información de la empresa
-    println("Ingrese el nombre:")
+    println("Ingrese el nombre de la empresa:")
     val nombreEmpresa = readLine()
     println("Ingrese el NIT:")
     val nit = readLine()

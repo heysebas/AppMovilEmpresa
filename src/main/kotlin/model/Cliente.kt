@@ -10,10 +10,9 @@ package model
  * @property telefono El número de teléfono de contacto del cliente.
  */
 class Cliente(
-    val nombre: String,
-    val documento: String,
-    val correo: String,
-    val direccion: String,
+    nombre: String,
+    documento: String,
+    correo: String,
+    val direccionCorrespondencia: String,
     val telefono: String
-) {
-}
+) : Persona(nombre, documento, correo)

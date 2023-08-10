@@ -13,14 +13,15 @@ package model
  */
 
 class Empleado(
-    val nombre: String,
-    val documento: String,
-    val correo: String,
+    nombre: String,
+    documento: String,
+    correo: String,
     var cargo: Cargo,
     val salario: Double,
     val dependencia: String,
     val subordinados: MutableList<Empleado> = mutableListOf()
-) {
+) : Persona(nombre, documento, correo) {
+
     /**
      * Agrega un empleado como subordinado de este empleado.
      *
